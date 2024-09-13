@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>희도쇼핑몰</title>
+    </head>
+    <body>
+        <!-- header -------------------------------------------------------------------- -->
+        <nav class="navbar">
+            <div class="main-navbar">
+                <div class="main-navbar-left">
+                    <a href="#"><i class="bx bx-menu"></i></a>
+                </div>
+                <div class="main-navbar-center">
+                    <a href="#" class="logo">J.hd</a>
+                </div>
+                <div class="main-navbar-right">
+                    <a href="#" class="shopping-bag"><i class="bx bxs-shopping-bag"></i></a>
+                    <a href="#" class="loginbtn">login</a>
+                </div>
+            </div>
+            <div class="category-navbar">
+                <div class="categories">
+                    <a href="#">Man</a>
+                    <a href="#">Woman</a>
+                    <a href="#">Underwears</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Accesaries</a>
+                    <a href="#">Bags</a>
+                    <a href="#">Others</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner screen --------------------------------------------------------------- -->
+        <main>
+            <div class="banner-container">
+                <div class="banner-image-container swiper-container">
+                    <div class="swiper-button-prev swiperbtn"></div>
+                    <div class="swiper-button-next swiperbtn"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="banner-image-wrapper swiper-wrapper">
+                        <img src="img/man1.jpg" class="swiper-slide" />
+                        <img src="img/man2.jpg" class="swiper-slide" />
+                        <img src="img/woman1.jpg" class="swiper-slide" />
+                        <img src="img/woman2.jpg" class="swiper-slide" />
+                    </div>
+                </div>
+            </div>
+            <h1 class="search-deco" data-scroll = "">J.hd</h1>
+            <!-- search screen ------------------------------------------------------------ -->
+            <div class="search-screen" data-scroll = "">
+                <div class="searchform">
+                    <input type="text" placeholder="찾으시는 상품을 검색해보세요 !" class="searchbar" />
+                    <button type="submit"><i class="bx bx-search"></i></button>
+                </div>
+            </div>
+            <hr />
+            <!-- subbanner ----------------------------------------------------------- -->
+            <div class="subbanner">
+                <div class="subbanner-option">
+                    <span>EVENT</span>
+                    <span>NEWS</span>
+                    <span>NOTICE</span>
+                </div>
+                <div class="subbanners-wrap">
+                    <div class="bannerbox bannerbox1" >
+                        <img src="./subbanner/banner1.jpg">
+                        <div class="bannertext bnrtext1">
+                            <div class="bnr-iconwrap">
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-message-dots' ></i>
+                                <i class='bx bx-send' ></i>
+                            </div>
+                            <h2>스스로 모델이 되어보세요.</h2>
+                            <h5>아무튼 무슨 이벤트 중이에요. 좀 그럴싸하게 뭐라뭐라 20% 추가할인 어쩌고 네네,,,</h5>
+                            <h6>~ 8월 29일</h6><span> 번역 보기</span>
+                        </div>
+                    </div>
+                    <div class="bannerbox bannerbox2" >
+                        <img src="./subbanner/banner2.jpg">
+                        <div class="bannertext bnrtext2">
+                            <div class="bnr-iconwrap">
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-message-dots' ></i>
+                                <i class='bx bx-send' ></i>
+                            </div>
+                            <h2>포토 리뷰 이벤트</h2>
+                            <h5>아무튼 무슨 이벤트 중이에요. 좀 그럴싸하게 뭐라뭐라 20% 추가할인 어쩌고 네네,,,</h5>
+                            <h6>~10월 11일</h6><span> 번역 보기</span>
+                        </div>
+                    </div>
+                    <div class="bannerbox bannerbox3" >
+                        <img src="./subbanner/banner3.jpg">
+                        <div class="bannertext bnrtext3">
+                            <div class="bnr-iconwrap">
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-message-dots' ></i>
+                                <i class='bx bx-send' ></i>
+                            </div>
+                            <h2>새 시즌 리뉴얼 이벤트</h2>
+                            <h5>아무튼 무슨 이벤트 중이에요. 좀 그럴싸하게 뭐라뭐라 20% 추가할인 어쩌고 네네,,,</h5>
+                            <h6>~9월 8일</h6><span> 번역 보기</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-screen">
+                <div class="gallery-imgwrap">
+                    <img src="gallery/1.jpg" class="gallery-img-1">
+                    <img src="gallery/2.jpg" class="gallery-img-2">
+                    <img src="gallery/3.jpg" class="gallery-img-3">
+                </div>
+            </div>
+            <!-- section 1 ------------------------------------------------ -->
+            <div class="main-screen01">
+                <div class="weeklybox" data-scroll="">
+                    <h1 class="weeklytext show" >Weekly HOT</h1>
+                    <h1 class="seasonaltext hide" >Seasonal HOT</h1>
+                    <i class='bx bxs-chevrons-right' id="rankbtn"></i>
+                </div>
+                <div class="weekly-hot-grid-container grid-show" >
+                    <div class="ranking-category">
+                        <span class="span_active">All</span>
+                        <span>Top</span>
+                        <span>Bottom</span>
+                        <span>Dress</span>
+                        <span>Underwears</span>
+                        <span>others</span>
+                    </div>
+
+                    <div class="item item1">
+                        <div class="imgwrap">
+                            <img src="woman_wear/upper1.jpg">
+                            <div class="ranking-box">
+                                <h1>1</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item1">
+                        <div class="imgwrap">
+                            <img src="woman_wear/upper2.jpg">
+                            <div class="ranking-box">
+                                <h1>2</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item1">
+                        <div class="imgwrap">
+                            <img src="woman_wear/down1.jpg">
+                            <div class="ranking-box">
+                                <h1>3</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item2">
+                        <div class="imgwrap">
+                            <img src="woman_wear/upper3.jpg">
+                            <div class="ranking-box">
+                                <h1>4</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item2">
+                        <div class="imgwrap">
+                            <img src="woman_wear/upper4.jpg">
+                            <div class="ranking-box">
+                                <h1>5</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item2">
+                        <div class="imgwrap">
+                            <img src="woman_wear/down2.jpg">
+                            <div class="ranking-box">
+                                <h1>6</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item2">
+                        <div class="imgwrap">
+                            <img src="woman_wear/upper5.jpg">
+                            <div class="ranking-box">
+                                <h1>7</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item3">
+                        <div class="imgwrap">
+                            <img src="woman_wear/dress1.jpg">
+                            <div class="ranking-box">
+                                <h1>8</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item3">
+                        <div class="imgwrap">
+                            <img src="woman_wear/down3.jpg">
+                            <div class="ranking-box">
+                                <h1>9</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item3">
+                        <div class="imgwrap">
+                            <img src="woman_wear/dress2.jpg">
+                            <div class="ranking-box">
+                                <h1>10</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item3">
+                        <div class="imgwrap">
+                            <img src="woman_wear/dress3.jpg">
+                            <div class="ranking-box">
+                                <h1>11</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weekly-hot-grid-container2 hide" >
+                    <div class="ranking-category">
+                        <span class="span_active">All</span>
+                        <span>Top</span>
+                        <span>Bottom</span>
+                        <span>Dress</span>
+                        <span>Underwears</span>
+                        <span>others</span>
+                    </div>
+
+                    <div class="item item1">
+                        <div class="imgwrap">
+                            <img src="seasonal/1.jpg">
+                            <div class="ranking-box">
+                                <h1>1</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item1">
+                        <div class="imgwrap">
+                            <img src="woman_wear/dress2.jpg">
+                            <div class="ranking-box">
+                                <h1>2</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item1">
+                        <div class="imgwrap">
+                            <img src="woman_wear/dress3.jpg">
+                            <div class="ranking-box">
+                                <h1>3</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item2">
+                        <div class="imgwrap">
+                            <img src="woman_wear/upper3.jpg">
+                            <div class="ranking-box">
+                                <h1>4</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item2">
+                        <div class="imgwrap">
+                            <img src="seasonal/2.jpg">
+                            <div class="ranking-box">
+                                <h1>5</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item2">
+                        <div class="imgwrap">
+                            <img src="seasonal/3.jpg">
+                            <div class="ranking-box">
+                                <h1>6</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item2">
+                        <div class="imgwrap">
+                            <img src="seasonal/4.jpg">
+                            <div class="ranking-box">
+                                <h1>7</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item3">
+                        <div class="imgwrap">
+                            <img src="seasonal/5.jpg">
+                            <div class="ranking-box">
+                                <h1>8</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item3">
+                        <div class="imgwrap">
+                            <img src="seasonal/6.jpg">
+                            <div class="ranking-box">
+                                <h1>9</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item3">
+                        <div class="imgwrap">
+                            <img src="seasonal/7.jpg">
+                            <div class="ranking-box">
+                                <h1>10</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item3">
+                        <div class="imgwrap">
+                            <img src="seasonal/8.jpg">
+                            <div class="ranking-box">
+                                <h1>11</h1>
+                            </div>
+                        </div>
+                        <div class="textwrap">
+                            <div class="brand-and-hashtags">
+                                <a href="#" class="brandname">SANTA CLOSS</a>
+                                <div class="hashtags">
+                                    <span>#당일출고</span><span>#인기폭주</span><span>#재고희박</span>
+                                </div>
+                            </div>
+                            <a href="#" class="item-title">[여리여리핏]미국 정품 아 배고프다 뭐라고 써야되냐 노랑 핑크 단가라 긴팔티 2398723-A82B27 SM MD LG XL</a>
+                            <div class="pricewrap">
+                                <h2 class="price-now">33,500KRW</h2><span class="original-price">67,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section 2 -->
+            <div class="main2-screen">
+                <h1 class="main2-titletext" data-scroll="">New Items.</h1>
+                <div class="newitem-box">
+                    <div class="newitem newitem1">
+                        <div class="newimgwrap">
+                            <img src="newitems/1.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">키르시</a>
+                            </div>
+                            <a href="#" class="item-title"></a>빅 체리 보아 퍼 점퍼 [아이보리]</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">89,500KRW</h2><span class="original-price">179,000</span><span class="price-off">50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+                        <div class="newimgwrap">
+                            <img src="/나만의쇼핑몰만들기/newitems/2.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">모즈모즈</a>
+                            </div>
+                            <a href="#" class="item-title">[SET] 상하1+1 컬리 로고 크롭후드 셋업</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">88,800KRW</h2><span class="original-price">111,000</span><span class="price-off">20%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+                        <div class="newimgwrap">
+                            <img src="/나만의쇼핑몰만들기/newitems/3.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">꼼파뇨</a>
+                            </div>
+                            <a href="#" class="item-title">익스플로 버니 피그먼트 반팔티 스모크블랙</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">27,500KRW</h2><span class="original-price">50,000</span><span class="price-off">45%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+                        <div class="newimgwrap">
+                            <img src="/나만의쇼핑몰만들기/newitems/6.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">꼼파뇨</a>
+                            </div>
+                            <a href="#" class="item-title">슈팅 로고 레글런 스웨트셔츠 베이지브라운</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">46,800KRW</h2><span class="original-price">72,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+                        <div class="newimgwrap">
+                            <img src="/나만의쇼핑몰만들기/newitems/4.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">키르시</a>
+                            </div>
+                            <a href="#" class="item-title">체리 퀼팅 자켓 + 머플러 세트 [블랙]</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">77,400KRW</h2><span class="original-price">129,000</span><span class="price-off">40%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+                        <div class="newimgwrap">
+                            <img src="/나만의쇼핑몰만들기/newitems/5.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">무르</a>
+                            </div>
+                            <a href="#" class="item-title">지미백 (5color)</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">72,800KRW</h2><span class="original-price">112,000</span><span class="price-off">32%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+                        <div class="newimgwrap">
+                            <img src="/나만의쇼핑몰만들기/newitems/8.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">갓샵</a>
+                            </div>
+                            <a href="#" class="item-title">노브라 캡내장 원피스 홈웨어 잠옷 블랙 그레이 2색 [캡 모달 브라캡 캡홈웨어 브라 마실룩]</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">25,900KRW</h2><!-- <span class="original-price"></span><span class="price-off"></span> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+                        <div class="newimgwrap">
+                            <img src="/나만의쇼핑몰만들기/newitems/7.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">무아무아</a>
+                            </div>
+                            <a href="#" class="item-title">[1+1할인] 슬림핏 레귤러 반팔 티셔츠: 3color</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">13,800KRW</h2><span class="original-price">20,000</span><span class="price-off">31%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+                        <div class="newimgwrap">
+                            <img src="/나만의쇼핑몰만들기/newitems/9.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">McDonalds.</a>
+                            </div>
+                            <a href="#" class="item-title">[그레이스] 오도어 레이스 브라렛</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">22,400KRW</h2><span class="original-price">24,900</span><span class="price-off">10%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+                        <div class="newimgwrap">
+                            <img src="/나만의쇼핑몰만들기/newitems/10.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">릴리프리</a>
+                            </div>
+                            <a href="#" class="item-title">[그레이스] 레이스 스트랩 홑겹</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">26,900KRW</h2><span class="original-price">29,900</span><span class="price-off">10%</span>
+                            </div>
+                        </div>
+                    </div>
+<!--  -->
+                    <div class="newitem newitem1">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/1.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">키르시</a>
+        </div>
+        <a href="#" class="item-title"></a>빅 체리 보아 퍼 점퍼 [아이보리]</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">89,500KRW</h2><span class="original-price">179,000</span><span class="price-off">50%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/2.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">모즈모즈</a>
+        </div>
+        <a href="#" class="item-title">[SET] 상하1+1 컬리 로고 크롭후드 셋업</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">88,800KRW</h2><span class="original-price">111,000</span><span class="price-off">20%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/3.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">꼼파뇨</a>
+        </div>
+        <a href="#" class="item-title">익스플로 버니 피그먼트 반팔티 스모크블랙</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">27,500KRW</h2><span class="original-price">50,000</span><span class="price-off">45%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/6.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">꼼파뇨</a>
+        </div>
+        <a href="#" class="item-title">슈팅 로고 레글런 스웨트셔츠 베이지브라운</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">46,800KRW</h2><span class="original-price">72,000</span><span class="price-off">35%</span>
+        </div>
+    </div>
+                    </div>  
+
+                    <div class="newitem newitem1">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/4.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">키르시</a>
+        </div>
+        <a href="#" class="item-title">체리 퀼팅 자켓 + 머플러 세트 [블랙]</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">77,400KRW</h2><span class="original-price">129,000</span><span class="price-off">40%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/5.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">무르</a>
+        </div>
+        <a href="#" class="item-title">지미백 (5color)</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">72,800KRW</h2><span class="original-price">112,000</span><span class="price-off">32%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/8.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">갓샵</a>
+        </div>
+        <a href="#" class="item-title">노브라 캡내장 원피스 홈웨어 잠옷 블랙 그레이 2색 [캡 모달 브라캡 캡홈웨어 브라 마실룩]</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">25,900KRW</h2><!-- <span class="original-price"></span><span class="price-off"></span> -->
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/7.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">무아무아</a>
+        </div>
+        <a href="#" class="item-title">[1+1할인] 슬림핏 레귤러 반팔 티셔츠: 3color</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">13,800KRW</h2><span class="original-price">20,000</span><span class="price-off">31%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/9.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">McDonalds.</a>
+        </div>
+        <a href="#" class="item-title">[그레이스] 오도어 레이스 브라렛</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">22,400KRW</h2><span class="original-price">24,900</span><span class="price-off">10%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem1">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/10.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">릴리프리</a>
+        </div>
+        <a href="#" class="item-title">[그레이스] 레이스 스트랩 홑겹</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">26,900KRW</h2><span class="original-price">29,900</span><span class="price-off">10%</span>
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main2-screen main2-screen2">
+                <div class="newitem-box newitem-box2">
+                    <div class="newitem newitem2">
+                        <div class="newimgwrap">
+                            <img src="newitems/1.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">키르시</a>
+                            </div>
+                            <a href="#" class="item-title"></a>빅 체리 보아 퍼 점퍼 [아이보리]</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">89,500KRW</h2><span class="original-price">179,000</span><span class="price-off">50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+                        <div class="newimgwrap">
+                            <img src="newitems/2.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">모즈모즈</a>
+                            </div>
+                            <a href="#" class="item-title">[SET] 상하1+1 컬리 로고 크롭후드 셋업</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">88,800KRW</h2><span class="original-price">111,000</span><span class="price-off">20%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+                        <div class="newimgwrap">
+                            <img src="newitems/3.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">꼼파뇨</a>
+                            </div>
+                            <a href="#" class="item-title">익스플로 버니 피그먼트 반팔티 스모크블랙</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">27,500KRW</h2><span class="original-price">50,000</span><span class="price-off">45%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+                        <div class="newimgwrap">
+                            <img src="newitems/6.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">꼼파뇨</a>
+                            </div>
+                            <a href="#" class="item-title">슈팅 로고 레글런 스웨트셔츠 베이지브라운</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">46,800KRW</h2><span class="original-price">72,000</span><span class="price-off">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+                        <div class="newimgwrap">
+                            <img src="newitems/4.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">키르시</a>
+                            </div>
+                            <a href="#" class="item-title">체리 퀼팅 자켓 + 머플러 세트 [블랙]</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">77,400KRW</h2><span class="original-price">129,000</span><span class="price-off">40%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+                        <div class="newimgwrap">
+                            <img src="newitems/5.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">무르</a>
+                            </div>
+                            <a href="#" class="item-title">지미백 (5color)</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">72,800KRW</h2><span class="original-price">112,000</span><span class="price-off">32%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+                        <div class="newimgwrap">
+                            <img src="newitems/8.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">갓샵</a>
+                            </div>
+                            <a href="#" class="item-title">노브라 캡내장 원피스 홈웨어 잠옷 블랙 그레이 2색 [캡 모달 브라캡 캡홈웨어 브라 마실룩]</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">25,900KRW</h2><!-- <span class="original-price"></span><span class="price-off"></span> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+                        <div class="newimgwrap">
+                            <img src="newitems/7.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">무아무아</a>
+                            </div>
+                            <a href="#" class="item-title">[1+1할인] 슬림핏 레귤러 반팔 티셔츠: 3color</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">13,800KRW</h2><span class="original-price">20,000</span><span class="price-off">31%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+                        <div class="newimgwrap">
+                            <img src="newitems/9.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">McDonalds.</a>
+                            </div>
+                            <a href="#" class="item-title">[그레이스] 오도어 레이스 브라렛</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">22,400KRW</h2><span class="original-price">24,900</span><span class="price-off">10%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+                        <div class="newimgwrap">
+                            <img src="/newitems/10.jpg">
+                        </div>
+                        <div class="newtextwrap">
+                            <div class="newbrand-and-hashtags">
+                                <a href="#" class="brandname">릴리프리</a>
+                            </div>
+                            <a href="#" class="item-title">[그레이스] 레이스 스트랩 홑겹</a>
+                            <div class="newpricewrap">
+                                <h2 class="price-now">26,900KRW</h2><span class="original-price">29,900</span><span class="price-off">10%</span>
+                            </div>
+                        </div>
+                    </div>
+<!--  -->
+                    <div class="newitem newitem2">
+    <div class="newimgwrap">
+        <img src="/나만의쇼핑몰만들기/newitems/1.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">키르시</a>
+        </div>
+        <a href="#" class="item-title"></a>빅 체리 보아 퍼 점퍼 [아이보리]</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">89,500KRW</h2><span class="original-price">179,000</span><span class="price-off">50%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+    <div class="newimgwrap">
+        <img src="newitems/2.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">모즈모즈</a>
+        </div>
+        <a href="#" class="item-title">[SET] 상하1+1 컬리 로고 크롭후드 셋업</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">88,800KRW</h2><span class="original-price">111,000</span><span class="price-off">20%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+    <div class="newimgwrap">
+        <img src="newitems/3.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">꼼파뇨</a>
+        </div>
+        <a href="#" class="item-title">익스플로 버니 피그먼트 반팔티 스모크블랙</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">27,500KRW</h2><span class="original-price">50,000</span><span class="price-off">45%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+    <div class="newimgwrap">
+        <img src="newitems/6.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">꼼파뇨</a>
+        </div>
+        <a href="#" class="item-title">슈팅 로고 레글런 스웨트셔츠 베이지브라운</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">46,800KRW</h2><span class="original-price">72,000</span><span class="price-off">35%</span>
+        </div>
+    </div>
+                    </div>  
+
+                    <div class="newitem newitem2">
+    <div class="newimgwrap">
+        <img src="newitems/4.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">키르시</a>
+        </div>
+        <a href="#" class="item-title">체리 퀼팅 자켓 + 머플러 세트 [블랙]</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">77,400KRW</h2><span class="original-price">129,000</span><span class="price-off">40%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+    <div class="newimgwrap">
+        <img src="newitems/5.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">무르</a>
+        </div>
+        <a href="#" class="item-title">지미백 (5color)</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">72,800KRW</h2><span class="original-price">112,000</span><span class="price-off">32%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+    <div class="newimgwrap">
+        <img src="newitems/8.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">갓샵</a>
+        </div>
+        <a href="#" class="item-title">노브라 캡내장 원피스 홈웨어 잠옷 블랙 그레이 2색 [캡 모달 브라캡 캡홈웨어 브라 마실룩]</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">25,900KRW</h2><!-- <span class="original-price"></span><span class="price-off"></span> -->
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+    <div class="newimgwrap">
+        <img src="newitems/7.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">무아무아</a>
+        </div>
+        <a href="#" class="item-title">[1+1할인] 슬림핏 레귤러 반팔 티셔츠: 3color</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">13,800KRW</h2><span class="original-price">20,000</span><span class="price-off">31%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+    <div class="newimgwrap">
+        <img src="newitems/9.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">McDonalds.</a>
+        </div>
+        <a href="#" class="item-title">[그레이스] 오도어 레이스 브라렛</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">22,400KRW</h2><span class="original-price">24,900</span><span class="price-off">10%</span>
+        </div>
+    </div>
+                    </div>
+
+                    <div class="newitem newitem2">
+    <div class="newimgwrap">
+        <img src="newitems/10.jpg">
+    </div>
+    <div class="newtextwrap">
+        <div class="newbrand-and-hashtags">
+            <a href="#" class="brandname">릴리프리</a>
+        </div>
+        <a href="#" class="item-title">[그레이스] 레이스 스트랩 홑겹</a>
+        <div class="newpricewrap">
+            <h2 class="price-now">26,900KRW</h2><span class="original-price">29,900</span><span class="price-off">10%</span>
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
