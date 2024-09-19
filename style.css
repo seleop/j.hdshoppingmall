@@ -4,8 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Protest+Guerrilla&family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
-
-
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Pretendard-Regular';
@@ -142,15 +146,85 @@ main {
 
 .categories {
     display: flex;
-    gap: 50px;
+    gap: 70px;
+    z-index: 998;
+    position: relative;
+    font-family: "Dosis", sans-serif;
 }
 
+.categories .categories-menu {
+    width: 100px;
+    height: auto;
+    visibility: hidden;
+    z-index: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: var(--middle-gray-color);
+    transform: translateY(-0.5em);
+    transition: all 0.3s ease-in-out 0s, visibility 0.3s linear 0.3s, z-index 0.3s;
+}
+
+.category-top:hover .topmenu, .category-top:focus .topmenu, .category-top:focus-within .topmenu,
+.category-bottom:hover .bottommenu, .category-bottom:focus .bottommenu, .category-bottom:focus-within .bottommenu,
+.category-underwears:hover .underwearmenu, .category-underwears:focus .underwearmenu, .category-underwears:focus-within .underwearmenu,
+.category-shoes:hover .shoesmenu, .category-shoes:focus .shoesmenu, .category-shoes:focus-within .shoesmenu,
+.category-accesaries:hover .acsmenu, .category-accesaries:focus .acsmenu, .category-accesaries:focus-within .acsmenu,
+.category-others:hover .othersmenu, .category-others:focus .othersmenu, .category-others:focus-within .othersmenu{
+    visibility: visible ;
+    opacity: 1;
+    z-index: 2;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.categories .topmenu {
+    top: 30px;
+    left: -40px;
+}
+
+.categories .bottommenu {
+    top: 30px;
+    left: 64px;
+}
+
+.categories .underwearmenu {
+    top: 30px;
+    left: 30%;
+}
+
+.categories .shoesmenu {
+    top: 30px;
+    left: 50.5%;
+}
+
+.categories .acsmenu {
+    top: 30px;
+    left: 70%;
+}
+
+.categories .othersmenu {
+    top: 30px;
+    right: -4.5%;
+}
+
+.categories .categories-menu ul {
+    text-align: center;
+    line-height: 40px;
+}
+
+.categories .categories-menu li {
+    color: var(--background-item-color);
+    font-size: 0.8em;
+}
 .category-navbar .categories a{
     font-family: "Dosis", sans-serif;
     color: var(--light-gray-color);
     position: relative;
 }
 
+.category-navbar .categories a:hover {
+    color: #a7a7a7;
+}
 .category-navbar .categories a:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: -2px;
@@ -179,6 +253,7 @@ main {
     overflow-x: hidden;
     margin: 0 auto;
     box-shadow: 0px 10px 20px var(--dark-gray-color);
+    z-index: 1;
 }
 
 .swiper-wrapper {
@@ -207,6 +282,7 @@ main {
     color: #c7c7c757;
     font-size: 30em;
     position: absolute;
+    cursor: default;
     top: 120%;
     left:30%;
     transform: translateX(-30%);
@@ -644,7 +720,7 @@ hr {
 
 .main2-screen {
     width: 100%;
-    height: 720px;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -755,6 +831,126 @@ color: var(--dark-background-color);
     font-weight: bold;
 }
 
+/* footer --------------------------------------------------------------- */
+
+footer {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color:#f3f3f3;
+}
+
+footer .footerbox {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footerline {
+    width: 2px;
+    height: 80%;
+    background-color: rgb(167, 167, 167);
+}
+
+.footerlogo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footerbox .footerlogo a {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2.6em;
+    color: var(--dark-background-color);
+}
+
+
+footer .footerbox .footertextwrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2vh 3.6vw;
+    font-family: 'Pretendard-Regular';
+    color: var(--dark-gray-color);
+}
+
+footer .footerbox .footertextwrap .footertext {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 80%;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+
+.fttextswrap .footertext2 {
+    height: 10vh;
+}
+
+.fttextswrap .footertext3 {
+    height: 10vh;
+} 
+
+
+footer .footerbox .footertextwrap .footertext h1 {
+    font-size: 1.3em;
+    padding: 0 0 2vh 0;
+}
+footer .footerbox .footermainbox {
+    width: 50%;
+    height: 100%;
+}
+
+footer .footerbox .footerinfo {
+    width: 35%;
+    height: 100%;
+    position: relative;
+}
+
+footer .footerbox .footerinfo .infocustomercenter {
+    display: center;
+    position: absolute;
+    padding: 7% 0 0 10%;
+}
+
+.infocustomercenter h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.infocustomercenter span, .infocustomercenter i {
+    font-size: 2em;
+    font-weight: bold;
+}
+footer .footerbox .footerinfo .infoiconwrap {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    top: 0;
+    right: 0;
+    font-size: 1.8em;
+    padding: 10% 0 0 10%;
+    color: var(--light-gray-color);
+}
+footer .footerbox .footerinfo .infotextwrap {
+    padding: 2% 0 2% 10%;
+    position: absolute;
+    font-size: 0.7em;
+}
+
+footer .footerbox .footerinfo .infotextwrap1 {
+    top: 65%;
+    transform: translate(0,-50%);
+}
 
 /* ======= 애니메이션========================================================== */
 [data-scroll] {
